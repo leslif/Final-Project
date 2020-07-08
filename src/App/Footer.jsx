@@ -3,13 +3,17 @@ import styled from 'styled-components';
 
 const Footer = () => {
     return (
-        <FooterStyled>Footer</FooterStyled>
+        <FooterStyled>
+            <div className='nested-wrapper'>
+            Footer
+            </div>
+        </FooterStyled>
     );
 }
 
 export default Footer;
 
 const FooterStyled = styled.footer`
-    background-color: white;
-    font-size: 20 px;
+    background-color: #C9B5A5;
+    font-size: 50 px;
     `;

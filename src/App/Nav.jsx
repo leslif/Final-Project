@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 const Navigation = () => {
     return (
-        <NavStyled>Navigation</NavStyled>
+        <NavStyled>
+            <div className='nested-wrapper'>
+            Navigation
+            </div>
+        </NavStyled>
     );
 }
 

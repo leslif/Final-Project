@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 const Header = () => {
     return (
-        <HeaderStyled>Latterian</HeaderStyled>
+        <HeaderStyled>
+            <div className='nested-wrapper'>
+            Latterian
+            </div>
+        </HeaderStyled>
     );
 }
 
@@ -11,5 +15,5 @@ export default Header;
 
 const HeaderStyled = styled.header`
     background-color: #C9B5A5;
-    font-size: 50 px;
+    font-size: 30 px;
     `;

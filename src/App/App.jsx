@@ -10,7 +10,6 @@ const App = () => {
 
     return (
         <AppStyled className='App'>
-            Latterian App 
             <Header />
             <Navigation />
             <Main />
@@ -22,9 +21,10 @@ const App = () => {
 export default App;
 
 const AppStyled = styled.div`
-    width: 300px;
-    margin: 50px auto;
-    border: solid 1px #333;
-    padding: 20px;
-    text-align: center;
+    .nested-wrapper {
+        max-width: 1200px;
+        margin: auto;
+        outline: solid black 1px;
+        padding: 10px;
+    }
 `;
