@@ -1,17 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-    faHotTub,
-} from '@fortawesome/free-solid-svg-icons';
-
 const Header = () => {
     return (
         <HeaderStyled>
             <div className='nested-wrapper'>
                 <div className="row-container">
-                    <div className="logo"><FontAwesomeIcon icon={ faHotTub } /></div>
+                    <div className="logo">
+                        <img src="/assets/img/logo-copy.svg" alt="logo"/>
+                    </div>
                     <div className="text">
                         <h2> Latterian </h2>
                         <h3> smile, there's coffee </h3>

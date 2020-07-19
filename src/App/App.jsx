@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 
 import Header from './Header.jsx';
 import Navigation from './Nav.jsx';
@@ -10,10 +11,12 @@ const App = () => {
 
     return (
         <AppStyled className='App'>
-            <Header />
-            <Navigation />
-            <Main />
-            <Footer />
+            <BrowserRouter>
+                <Header />
+                <Navigation />
+                <Main />
+                <Footer />
+            </BrowserRouter>
         </AppStyled>
     );
 }
