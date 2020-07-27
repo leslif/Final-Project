@@ -7,7 +7,7 @@ const Header = () => {
             <div className='nested-wrapper'>
                 <div className="row-container">
                     <div className="logo">
-                        <img src="/assets/img/logo-copy.svg" alt="logo"/>
+                        <img src="/assets/img/logo.png" alt="logo"/>
                     </div>
                     <div className="text">
                         <h2> Latterian </h2>
@@ -34,7 +34,7 @@ const HeaderStyled = styled.header`
         color: white;
         margin-right: 10px;
 
-        svg {
+        img {
             width: 80px;
             height: auto;
         }

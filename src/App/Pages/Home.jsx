@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+import Tabbed from './Tabbed/Tabbed.jsx';
+import Staff from './Staff/Staff.jsx';
+
 const Home = () => {
 
     return (
@@ -9,7 +12,12 @@ const Home = () => {
             <Helmet>
                 <title> Welcome </title> 
             </Helmet>
-            Home 
+            <div className="nested-wrapper">
+                <Tabbed /> 
+            </div>
+            <div className="nested-wrapper">
+                <Staff /> 
+            </div>
         </HomeStyled>
     );
 }
