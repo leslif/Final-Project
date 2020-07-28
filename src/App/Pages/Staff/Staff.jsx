@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import StaffMember from './StaffMember.jsx';
-import { staffData } from './staffData.js';
+import { productData } from './productData.js';
 
 const Staff = () => {
 
     const renderMembers = () => {
-        return staffData.map((member, idx) => {
+        return productData.map((product, idx) => {
             return <StaffMember
                 key={ idx }
-                member={ member }
+                product={ product }
             />
         });
     }
 
     return (
         <StaffStyled className='Staff'>
-            Staff
+            Our Coffee
             <div className='members'>
                 { renderMembers () }
             </div>
@@ -33,3 +33,4 @@ const StaffStyled = styled.div`
     }
     
 `;
+

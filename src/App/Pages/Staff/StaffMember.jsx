@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StaffMember = ({member}) => {
+const StaffMember = ({product}) => {
 
     return (
         <StaffMemberStyled className='StaffMember'>
-            <img src={ member.image } alt={ member.name }/>
-            <div className="title">{ member.name }</div>
+            <img src={ product.image } alt={ product.name }/>
+            <div className="title">{ product.name }</div>
         </StaffMemberStyled>
     );
 }

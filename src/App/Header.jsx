@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { ReactComponent as Logo } from '../common/logo-copy.svg';
+
 const Header = () => {
     return (
         <HeaderStyled>
             <div className='nested-wrapper'>
                 <div className="row-container">
-                    <div className="logo">
-                        <img src="/assets/img/logo.png" alt="logo"/>
-                    </div>
+                    <Logo />
                     <div className="text">
                         <h2> Latterian </h2>
                         <h3> smile, there's coffee </h3>
