@@ -27,9 +27,13 @@ const Staff = () => {
 export default Staff;
 
 const StaffStyled = styled.div`
+
+    background-color: #C9B5A5;
+    
     .members {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
 `;

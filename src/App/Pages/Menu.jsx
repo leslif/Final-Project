@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+import Coffees from './Coffees/Coffees.jsx';
+
 const Menu = () => {
 
     return (
@@ -9,7 +11,9 @@ const Menu = () => {
             <Helmet>
                 <title> Menu </title>
             </Helmet>
-            Menu 
+            <div className="nested-wrapper">
+                <Coffees />
+            </div>
         </MenuStyled>
     );
 }
