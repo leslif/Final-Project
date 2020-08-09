@@ -14,7 +14,11 @@ const Coffees = () => {
 
     return (
         <CoffeesStyled className='Coffees'>
-            <FilterNav coffees={ coffees } currCategory={ currCategory } />
+            <FilterNav 
+                coffees={ coffees } 
+                currCategory={ currCategory } 
+                currCategorySet={ currCategorySet }
+            />
             <Gallery coffees={ coffees } currCategory={ currCategory } />
         </CoffeesStyled>
     );

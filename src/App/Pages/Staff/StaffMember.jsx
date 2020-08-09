@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { mq } from '../../../common/mediaQueries.js';
 
+import Lightbox from '../Coffees/Gallery/Lightbox.jsx';
+
 const StaffMember = ({product}) => {
+
+const [ showLBox, showLboxUpdate ] = useState(false);
+
+const turnOn = () => {
+    showLboxUpdate(true);
+}
+
+const turnOff = () => {
+    showLboxUpdate(false);
+}
 
     return (
         <StaffMemberStyled className='StaffMember'>
-            <img src={ product.image } alt={ product.name }/>
+            <img src={ product.image } alt={ product.name }
+            onClick={ turnOn }
+            />
             <div className="title">{ product.name }</div>
+            
+            <Lightbox show={ showLBox } hideAction={ turnOff }>
+                <img src={ product.image } alt={ product.name }/>
+                <h3>{ product.name }</h3>
+                <div className='description'>{ product.description }</div>
+            </Lightbox>
+
         </StaffMemberStyled>
     );
 }

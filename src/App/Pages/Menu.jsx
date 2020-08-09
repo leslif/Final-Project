@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
-import Coffees from './Coffees/Coffees.jsx';
+import CoffeesContainer from './Coffees/CoffeesContainer.jsx';
 
 const Menu = () => {
 
@@ -12,7 +12,7 @@ const Menu = () => {
                 <title> Menu </title>
             </Helmet>
             <div className="nested-wrapper">
-                <Coffees />
+                <CoffeesContainer />
             </div>
         </MenuStyled>
     );

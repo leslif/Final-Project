@@ -5,7 +5,11 @@ import GalleryItem from './GalleryItem.jsx';
 const Gallery = ({ coffees, currCategory }) => {
 
     const renderGallery = () => {
-        return coffees.packages.map((item, idx) => {
+        return coffees.packages
+        .filter ((item, idx) => {
+            return (currCategory === 'All' || item.category === currCategory);
+        })
+        .map((item, idx) => {
             return <GalleryItem key={idx} item={ item } />
         });
     }
@@ -20,5 +24,8 @@ const Gallery = ({ coffees, currCategory }) => {
 export default Gallery;
 
 const GalleryStyled = styled.div`
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 `;
