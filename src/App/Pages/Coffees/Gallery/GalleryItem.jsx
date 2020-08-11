@@ -41,8 +41,9 @@ export default GalleryItem;
 const GalleryItemStyled = styled.div`
     position: relative;
     margin: 20px;
+    width: 25%;
 
-    img { display: block; }
+    img { display: block; max-width: 100%; }
 
     .category {
         position: absolute;
