@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import GalleryItem from './GalleryItem.jsx';
 
-const Gallery = ({ coffees, currCategory }) => {
+const Gallery = ({ locations, currCategory }) => {
 
     const renderGallery = () => {
-        return coffees.packages
+        return locations.packages
         .filter ((item, idx) => {
             return (currCategory === 'All' || item.category === currCategory);
         })
@@ -27,5 +27,6 @@ const GalleryStyled = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 30px;
 
 `;

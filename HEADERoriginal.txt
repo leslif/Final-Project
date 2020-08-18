@@ -1,0 +1,91 @@
+import React from 'react';
+import styled from 'styled-components';
+
+import { ReactComponent as Logo } from '../common/logo-copy.svg';
+
+const Header = () => {
+    return (
+        <HeaderStyled>
+            <div className='nested-wrapper'>
+                <div className="row-container">
+                    <div className="logo">
+                        <Logo />
+                    </div>
+                    <div className="text">
+                        <h2> Latterian </h2>
+                        <h3> smile, there's coffee </h3>
+                    </div>
+                </div>
+            </div>
+        </HeaderStyled>
+    );
+}
+
+export default Header;
+
+const HeaderStyled = styled.header`
+    background-color: #C9B5A5;
+    font-size: 30px;
+
+    .row-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        color: white;
+        margin-right: 10px;
+
+        svg {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .text {
+        h2{
+            font-size: 30px;
+            margin: 0px;
+            color: white;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 0px;
+            color: white;
+        }
+    }
+
+`;
+
+    padding: 0px;
+    .img-box img{
+
+    }
+
+    @media ${mq.tablet} {
+        width: 1000px;
+    }
+
+    @media ${mq.desktop} {
+        width: 1500px;
+    }
+
+    .img-box {
+        position: relative;
+    }
+
+    .img-box img {
+        width: 100%;
+        height: auto;
+    }
+    .img-box h2 {
+        position: absolute;
+        top: 20%;
+        left: 26%;
+        font-size: 33pt;
+        text-align: center;
+        color: black;
+        font-family: itc-american-typewriter, serif;
+        font-weight: 700;
+        font-style: normal;
+    }

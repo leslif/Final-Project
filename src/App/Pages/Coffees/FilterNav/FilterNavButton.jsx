@@ -13,6 +13,7 @@ const FilterNavButton = ({name, currCategory, currCategorySet}) => {
         <FilterNavButtonStyled 
                 className={ theClassName }
                 onClick={ changeCategory }
+                style={{letterSpacing: 3}}
             >
             { name }
         </FilterNavButtonStyled>
@@ -27,6 +28,8 @@ const FilterNavButtonStyled = styled.div`
     background-color: rgba(202, 181, 165, .47);
     margin: 10px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     cursor: pointer;
 
     &:hover {

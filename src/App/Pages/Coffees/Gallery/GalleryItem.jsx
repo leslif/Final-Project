@@ -17,7 +17,6 @@ const GalleryItem = ({ item }) => {
 
     return (
         <GalleryItemStyled className='GalleryItem'>
-            <div className="category">{ item.category }</div>
             <img 
                 src={ item.image } 
                 alt={ item.title }
@@ -42,22 +41,19 @@ const GalleryItemStyled = styled.div`
     position: relative;
     margin: 20px;
     width: 25%;
+    padding: 5px;
+    margin: 21px;
+    cursor: pointer;
 
     img { display: block; max-width: 100%; }
 
-    .category {
-        position: absolute;
-        top: 0; right: 0; left: 0;
-        background-color: rgba(202, 181, 165, .47);
-        padding: 10px;
-        font-size: 12px;
-        text-align: right;
-    }
     .title {
         position: absolute;
-        bottom: 0; right: 0; left: 0;
+        bottom: -20; right: 0; left: 0;
         padding: 10px;
         font-size: 20px;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
     }
 `;

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FilterNavButton from './FilterNavButton.jsx';
-const FilterNav = ({ coffees, currCategory, currCategorySet }) => {
+const FilterNav = ({ locations, currCategory, currCategorySet }) => {
 
     const renderButtons = () => {
-        return coffees.categories.map((name, idx) => {
+        return locations.categories.map((name, idx) => {
             return <FilterNavButton 
                 key={idx} 
                 name={ name } 
@@ -26,4 +26,5 @@ export default FilterNav;
 
 const FilterNavStyled = styled.div`
     text-align: center;
+    padding: 10px;
 `;

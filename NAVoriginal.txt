@@ -40,6 +40,7 @@ const Nav = () => {
 
     return (
         <NavStyled>
+            <div className='nested-wrapper'>
                 <div 
                     className="hamburger"
                     onClick={ toggleMenu }
@@ -49,12 +50,13 @@ const Nav = () => {
                 {
                     showMenu &&
                     <div className="links">
-                        <NavLink to="/" exact><text style={{letterSpacing: 3.5}}>HOME</text></NavLink>
-                        <NavLink to="/locations"><text style={{letterSpacing: 3.5}}>LOCATIONS</text></NavLink>
-                        <NavLink to="/menu"><text style={{letterSpacing: 3.5}}>MENU</text></NavLink>
-                        <NavLink to="/ourstory"><text style={{letterSpacing: 3.5}}>ABOUT</text></NavLink>
+                        <NavLink to="/" exact>HOME</NavLink>
+                        <NavLink to="/menu">LOCATIONS</NavLink>
+                        <NavLink to="/contact">MENU</NavLink>
+                        <NavLink to="/login">ABOUT</NavLink>
                     </div>
                 }
+            </div>
         </NavStyled>
     );
 }
@@ -64,18 +66,16 @@ export default Nav;
 const NavStyled = styled.nav`
     background-color: #C9B5A5;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 
     .hamburger {
         position: absolute;
         right: 20px;
-        top: 40px;
-        z-index: 1001;
+        top: 20px;
 
         cursor: pointer;
 
         svg {
-            color: black;
+            color: #6D5341;
             width: 22px;
             height: auto;
         }
@@ -100,21 +100,21 @@ const NavStyled = styled.nav`
         width: 100%;
 
         @media ${mq.tablet} {
-            width: 160px;
+            width: 100px;
             line-height: 50px;
-            margin-right: 0px;
-            margin-left: 0px;            
+            margin-right: 10px;
+            margin-left: 10px;            
         }
         @media ${mq.desktop} {
-            width: 210px;
+            width: 150px;
         }
 
         &:hover {
-            background-color: #6D5341;
+            background-color: #a7968a;
         }
 
         &.active {
-            background-color: #6D5341;
+            background-color: #ff7b2e;
         }
     }
     `;
