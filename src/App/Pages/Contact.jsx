@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+import YouTube from './YouTube/YouTube.jsx';
+
 const Contact = () => {
 
     return (
@@ -9,7 +11,7 @@ const Contact = () => {
             <Helmet>
                 <title> Contact </title>
             </Helmet>
-            Contact 
+            <YouTube />
         </ContactStyled>
     );
 }
